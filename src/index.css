@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    background-color: #8fd1c5;
+    background-image: url("image_palmier_flou.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+
+
+
+.about{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold; 
+    white-space: pre;
+    
+}
+
+.display_card {
+    display: flex;
+    flex-Wrap: wrap;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.displaycard_title {
+    top: 90;
+    width: 190;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #02666d;
+}
+
+.info_drink {
+    font-weight: bold;
+}
+
+.img_detail_Card {
+    flex-Wrap: wrap;
+    display: flex;
+    justify-Content: center;
+}
+
+
+.ingredient {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: pre;
+}
+
+.ingredient_title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.quantity {
+    text-align: right;
+}
+
+.instructions {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.instructions_title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.detailcard_title {
+    color: #02666d;
+    font-size: 34px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.img_detail_Card {
+    display: flex;
+    justify-Content: center;
+}
+
+.input {
+
+    width: 350px;
+    height: 50px;
+    border: 7px solid #D84B01;
+    border-radius: 10px;
+    margin-left: 290px;
+    
+}
+
+.text{
+    color: black;
+    opacity: 0.9;
+}
+
+.label{  
+margin-top: 50px;
+}
+
+
+.link {
+    text-Decoration: "underline";
+    color: black;
+    font-size: 20px;
+}
+
+.link:hover {
+    color: #02666d;
+}
+
+.button {
+    background-color: white;
+    border-Color: #D84B01;
+    color: #02666d;
+    border-Width: 6px;
+    border-Radius: 50px;
+    width: 120px;
+    height: 50px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.button:hover {
+    border-Color: #02666d;
+    background-color: white;
+    color: #D84B01;
+}
+
+.navbar {
+    background-color: #03919B;
+    font-size: 30px;
+    text-decoration-color: #D84B01;
+    height: 130px;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: 45px;
+    margin-left: 0px;
+    margin-right: 70px;
+    font-weight: bold;
+}
+
+.navbar-dropdown {
+    background-color: #03919B;
+}
+
+.nav-item .dropdown-menu {
+    background: #03919B;
+}
+
+.nav-item .dropdown-item {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item .dropdown-item:hover {
+    background: #FFD083;
+    color: #02666d;
+    border-radius: 5px;
+}
+
+.nav-item .dropdown-item:focus {
+    color: #D84B01;
+}
+
+.App-logo {
+    height: 60px;
+}
+
+.info_drink {
+    display: flex;
+    justify-Content: center;
+    flex-Wrap: wrap;
+}
+
+
+
+.navbar {
+    background-color: #03919B;
+    font-size: 30px;
+    text-decoration-color: #D84B01;
+    height: 130px;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: 45px;
+    margin-left: 0px;
+    margin-right: 70px;
+    font-weight: bold;
+}
+
+.navbar-dropdown {
+    background-color: #03919B;
+}
+
+.nav-item .dropdown-menu {
+    background: #03919B;
+}
+
+.nav-item .dropdown-item {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item .dropdown-item:hover {
+    background: #FFD083;
+    color: #02666d;
+    border-radius: 5px;
+}
+
+.nav-item .dropdown-item:focus {
+    color: #D84B01;
+}
+
+.App-logo {
+    height: 60px;
+}

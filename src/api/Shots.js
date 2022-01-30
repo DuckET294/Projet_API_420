@@ -4,46 +4,57 @@ import DisplayCard from '../components/DisplayCard';
 
 
 
+/*
+Ici est une fonction qui effectue un get
+en utilisant axios et retourne les données
+qu'on affiche ensuite dans un conteneur à
+l'aide du components DisplayCard.
+*/
+
+
 export default function Shots() {
 
 
-    const [shots, setData] = useState([{}]);
-    const axios = require('axios');
+    const [shots, setData] = useState([{}]);                         //Ici on déclare un useState
+    const axios = require('axios');                                  //On déclare axios pour pouvoir l'utiliser
 
-    useEffect(() => {
-        function getShots() {
-            axios.get('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Shot')
-                .then(response => {
-                    const donnes = response.data.drinks;
-                    console.log(response);
-                    setData(donnes);
-                })
-                .catch(function (error) {
-                    // handle error
-                    console.log(error);
-                })
-                .then(function () {
+    useEffect(() => {                                                //hook Effect appeler
+        axios.get('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Shot', {   //ici on fait un appel get à l'API avec axios
+        })                                                                         
+            .then(response => {                                      //ici on reçoit la réponse
+                const donnes = response.data.drinks;                 //On déclare une const et on met la valeur dans un const
+                console.log(response);                               //On affiche ensuite la réponse dans la console
+                setData(donnes);                                     //On met chaque valeurs récoltés dans le State
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
+    }, []);                                                         // eslint-disable-line react-hooks/exhaustive-deps
 
-                });
-        };
-        getShots();
+    console.log(shots);                                             //On affiche la liste dans un JSON 
 
-    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    if (!shots) return null;                                        //si aucun punch est retourner on retourne null
 
-    console.log(shots);
-    
+    /*
+    Ici on appel window qui représente la fenêtre Punch
+    et chaque fois qu'on va revenir sur la page elle s'affichera
+    au début de l'écran
+    */
+
+
     if (window !== undefined && window !== null) {
-        window.scrollTo({
-           top: 0,
-           behavior: 'instant'
+        window.scrollTo({                                         //ici c'est la fonction window.ScrollTo qui est déclaré
+            top: 0,                                               //ici c'est l'endroit de l'écran ou on veut que l'écran monte
+            behavior: 'instant'                                   //behavior est le type de remonter de l'écran donc ici ça remone instantanément
         });
-     }
+    }
+
 
     return (
 
         <Container>
             <div className='label'>
-                <Label ribbon={true} style={{color:"#02666d", background: "#ffe9c4", fontSize: 24, fontWeight: "bold"}} >Shots</Label>
+                <Label ribbon={true} style={{ color: "#02666d", background: "#ffe9c4", fontSize: 24, fontWeight: "bold" }} >Shots</Label>
             </div>
             <div className='display_card'>
                 {shots.map((shot, key) => (<DisplayCard key={key} {...shot} />))}

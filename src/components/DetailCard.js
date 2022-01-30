@@ -2,6 +2,11 @@ import { Card, CardImg } from "react-bootstrap";
 import { Header } from "semantic-ui-react";
 
 
+/*
+Ici est une fonction pour afficher les détails 
+de chaque cocktails dans des "Card".
+*/
+
 const DetailCard = props => {
 
 

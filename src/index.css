@@ -13,8 +13,23 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.site{
+    color: black;
 
+}
 
+.titre{
+    font-weight: bolder;
+
+}
+
+.home{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    white-space: pre;
+
+}
 
 .about{
     text-align: center;

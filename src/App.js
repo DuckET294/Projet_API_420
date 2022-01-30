@@ -20,6 +20,11 @@ import CoffeeTea from "./api/CoffeTea";
 import SoftDrinkSoda from "./api/SoftDrinkSoda";
 import HomeMadeLiqueur from "./api/HomeMadeLiqueur"
 
+/*
+Le code en bas est un fragment contenant 
+un menu avec un menu déroulant ainsi que
+les routes pour acceder pour chaque page.
+*/
 
 export default function App() {
 
